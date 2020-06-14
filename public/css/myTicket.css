@@ -1,0 +1,19 @@
+#myTab{
+    margin: 75px auto 12px auto;
+    width: 96%;
+}
+#myTabContent{
+    width: 96%;
+    margin: 0 auto;
+}
+.card{
+    margin-bottom: 12px;
+}
+.card-body p{
+    margin-bottom: 2px;
+}
+.refund{
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+}

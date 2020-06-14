@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>影厅信息</title>
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="images/x-icon">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../public/css/frame.css">
+    <link rel="stylesheet" href="../public/css/studioDetail.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../public/js/studioDetail.js"></script>
+</head>
+<body onload="init()">
+    <div class="myNav">
+    <div class="user">
+        <div class="photo"></div>
+        <span>-Name-</span>
+    </div>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link myNav-link chosen" href="studio.html"><i class="iconfont icon-yingyuan"></i>影厅管理</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link myNav-link" href="play.html"><i class="iconfont icon-huaban-"></i>影片管理</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link myNav-link" href="seat.html"><i class="iconfont icon-zuowei"></i>座位管理</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link myNav-link" href="schedule.html"><i class="iconfont icon-jihua1"></i>计划管理</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link myNav-link" href="staff.html"><i class="iconfont icon-yuangongguanli1"></i>员工管理</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link myNav-link" href="sale.html"><i class="iconfont icon-shuju"></i>销售数据</a>
+        </li>
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link myNav-link" href="ticket.html"><i class="iconfont icon-piaojuguanli"></i>订票退票</a>-->
+<!--        </li>-->
+    </ul>
+    <span class="copyright">Copyright @ 2020 Honey Peach</span>
+</div>
+    <div class="title-nav">
+    <span><a href="#" class="exit"><i class="iconfont icon-tuichu_huaban1"></i> 注销</a></span>
+    <span class="name">- 欢迎来到 Honey Peach 影院管理系统 -</span>
+</div>
+    <div class="frame">
+        <h2>影厅信息</h2>
+        <div class="addForm">
+            <form id="myform">
+                <input type="hidden" id="type" name="type">
+                <div class="form-group row">
+                    <label for="studioid" class="col-form-label"><strong>影厅编号：</strong></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="studioid" id="studioid" placeholder="请输入影厅编号">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="studioname" class="col-form-label"><strong>影厅名称：</strong></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="studioname" id="studioname" placeholder="请输入影厅名称">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="rowcount" class="col-form-label"><strong>座位行数：</strong></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="rowcount" id="rowcount" placeholder="请输入座位行数">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="colcount" class="col-form-label"><strong>座位列数：</strong></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="colcount" id="colcount" placeholder="请输入座位列数">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="intro" class="col-form-label"><strong>影厅描述：</strong></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="intro" id="intro" placeholder="请输入影厅描述">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success add" onclick="check()">提交</button>
+                <button type="button" class="btn btn-primary return" onclick="javascript:window.location='studio.html'">返回</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

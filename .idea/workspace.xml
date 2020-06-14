@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ffef2ed-6664-4c2b-861c-b3e82f7826f6" name="默认更改列表" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1br7V7GMnlYmrNCnNRVHWHa5PSE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TTMS_Web" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ffef2ed-6664-4c2b-861c-b3e82f7826f6" name="默认更改列表" comment="" />
+      <created>1589378378978</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589378378978</updated>
+      <workItem from="1589378381515" duration="7347000" />
+      <workItem from="1589626492932" duration="1387000" />
+      <workItem from="1589628309875" duration="1795000" />
+      <workItem from="1589630174691" duration="1000" />
+      <workItem from="1589630209706" duration="22514000" />
+      <workItem from="1589855690472" duration="2000" />
+      <workItem from="1589856944627" duration="99000" />
+      <workItem from="1589857060791" duration="1000" />
+      <workItem from="1589857077284" duration="8029000" />
+      <workItem from="1589887610114" duration="6605000" />
+      <workItem from="1590030529138" duration="4440000" />
+      <workItem from="1590310180887" duration="23842000" />
+      <workItem from="1590452125392" duration="9736000" />
+      <workItem from="1590480738282" duration="1476000" />
+      <workItem from="1590539206390" duration="3803000" />
+      <workItem from="1590627983625" duration="12000" />
+      <workItem from="1590629557038" duration="12462000" />
+      <workItem from="1590976796521" duration="3776000" />
+      <workItem from="1590998595048" duration="2794000" />
+      <workItem from="1591001735995" duration="5290000" />
+      <workItem from="1591042042534" duration="2875000" />
+      <workItem from="1591044937086" duration="15107000" />
+      <workItem from="1591156403714" duration="19677000" />
+      <workItem from="1591212999563" duration="3054000" />
+      <workItem from="1591228917317" duration="26568000" />
+      <workItem from="1591338455259" duration="599000" />
+      <workItem from="1591883888482" duration="1692000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1590627993537">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1590627993537" />
+  </component>
+</project>

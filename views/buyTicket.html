@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Honey Peach</title>
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="images/x-icon">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../public/css/frame.css">
+    <link rel="stylesheet" href="../public/css/buyTicket.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../public/js/buyTicket.js"></script>
+</head>
+<body onload="init()">
+    <div class="title-nav" style="width: 100%;height: 65px">
+        <p style="float: left; font-family: fantasy;padding-left: 35px;font-size: 30px;line-height: 65px">Honey Peach</p>
+        <span><a href="#" class="exit"><i class="iconfont icon-tuichu_huaban1" style="line-height: 65px"></i> 注销</a></span>
+        <span><a href="myTicket.html" class="exit"><i class="iconfont icon-piaojuguanli" style="line-height: 65px"></i> 我的订单</a></span>
+        <span><a href="buyTicket.html" class="exit" style="line-height: 65px">首页</a></span>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../public/img/poster1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../public/img/poster2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../public/img/poster3.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">正在热映</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">即将上映</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="margin: 0 auto">
+            <div class="card mb-3 ticketCard">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <img src="../public/img/001.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h3 class="card-title">唐人街探案3</h3>
+                            <p class="card-text">类型：喜剧 悬疑</p>
+                            <p class="card-text">区域：中国大陆</p>
+                            <p class="card-text">时长：136分钟</p>
+                            <p class="card-text">简介：继曼谷、纽约之后，东京再出大案。唐人街神探唐仁（王宝强 饰）、秦风（刘昊然 饰）受侦探野田昊（妻夫木聪 饰）的邀请前往破案。“CRIMASTER世界侦探排行榜”中的侦探们闻讯后也齐聚东京，加入挑战，而排名第一Q的现身，让这个大案更加扑朔迷离，一场亚洲最强神探之间的较量即将爆笑展开……</p>
+                            <h5 class="price">票价：35元</h5>
+                            <div class="buy"><button type="button" class="btn btn-success btn-lg" onclick="schedule()">购票</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 ticketCard">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <img src="../public/img/002.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h3 class="card-title">姜子牙</h3>
+                            <p class="card-text">类型：动画 动作 冒险</p>
+                            <p class="card-text">区域：中国大陆</p>
+                            <p class="card-text">时长：110分钟</p>
+                            <p class="card-text">简介：昆仑弟子姜子牙（郑希 配音）率领众神伐纣，赢得封神大战胜利。即将受封成为众神之长的他，却因一时过失引得昆仑大乱，从此被贬北海，为世人所唾弃。十年后，因一个契机，姜子牙踏上重回昆仑的旅途。在战后的废墟之上，他重新找到自我，也洞悉了十年前的一切真相。</p>
+                            <h5 class="price">票价：35元</h5>
+                            <div class="buy"><button type="button" class="btn btn-success btn-lg" onclick="schedule()">购票</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 ticketCard">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <img src="../public/img/003.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h3 class="card-title">夺冠</h3>
+                            <p class="card-text">类型：剧情</p>
+                            <p class="card-text">区域：中国大陆,中国香港</p>
+                            <p class="card-text">时长：135分钟</p>
+                            <p class="card-text">简介：2008年8月15日，北京奥运会女排比赛，中国VS美国。戴着金丝框眼镜的郎平（巩俐 饰）坐在美国队教练席上，大气沉稳，目光如电；中国队教练陈忠和（黄渤 饰）站在场边，全神贯注，面带笑容。陈忠和望向郎平，目光充满深意，不断经过的人影遮蔽了他的视线，中国女排三十余年的沉浮图景被缓缓打开……</p>
+                            <h5 class="price">票价：35元</h5>
+                            <div class="buy"><button type="button" class="btn btn-success btn-lg" onclick="schedule()">购票</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="card mb-3 ticketCard">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <img src="../public/img/001.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h3 class="card-title">唐人街探案3</h3>
+                            <p class="card-text">类型：喜剧 悬疑</p>
+                            <p class="card-text">区域：中国大陆</p>
+                            <p class="card-text">时长：136分钟</p>
+                            <p class="card-text">简介：继曼谷、纽约之后，东京再出大案。唐人街神探唐仁（王宝强 饰）、秦风（刘昊然 饰）受侦探野田昊（妻夫木聪 饰）的邀请前往破案。“CRIMASTER世界侦探排行榜”中的侦探们闻讯后也齐聚东京，加入挑战，而排名第一Q的现身，让这个大案更加扑朔迷离，一场亚洲最强神探之间的较量即将爆笑展开……</p>
+                            <h5>上映时间：2020.6.28</h5>
+                            <button type="button" class="btn btn-warning btn-lg buy">想看</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 ticketCard">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <img src="../public/img/002.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h3 class="card-title">姜子牙</h3>
+                            <p class="card-text">类型：动画 动作 冒险</p>
+                            <p class="card-text">区域：中国大陆</p>
+                            <p class="card-text">时长：110分钟</p>
+                            <p class="card-text">简介：昆仑弟子姜子牙（郑希 配音）率领众神伐纣，赢得封神大战胜利。即将受封成为众神之长的他，却因一时过失引得昆仑大乱，从此被贬北海，为世人所唾弃。十年后，因一个契机，姜子牙踏上重回昆仑的旅途。在战后的废墟之上，他重新找到自我，也洞悉了十年前的一切真相。</p>
+                            <h5>上映时间：2020.6.28</h5>
+                            <button type="button" class="btn btn-warning btn-lg buy">想看</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 ticketCard">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <img src="../public/img/003.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h3 class="card-title">夺冠</h3>
+                            <p class="card-text">类型：剧情</p>
+                            <p class="card-text">区域：中国大陆,中国香港</p>
+                            <p class="card-text">时长：135分钟</p>
+                            <p class="card-text">简介：2008年8月15日，北京奥运会女排比赛，中国VS美国。戴着金丝框眼镜的郎平（巩俐 饰）坐在美国队教练席上，大气沉稳，目光如电；中国队教练陈忠和（黄渤 饰）站在场边，全神贯注，面带笑容。陈忠和望向郎平，目光充满深意，不断经过的人影遮蔽了他的视线，中国女排三十余年的沉浮图景被缓缓打开……</p>
+                            <h5>上映时间：2020.6.28</h5>
+                            <button type="button" class="btn btn-warning btn-lg buy">想看</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

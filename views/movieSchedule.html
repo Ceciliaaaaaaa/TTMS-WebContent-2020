@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择场次</title>
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="images/x-icon">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../public/css/frame.css">
+<!--    <link rel="stylesheet" href="../public/css/movieSchedule.css">-->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../public/js/movieSchedule.js"></script>
+    <style>
+        .theaterTable{
+            margin: 90px auto 0 auto;
+            width: 96%;
+        }
+    </style>
+</head>
+<body onload="init()">
+<div class="title-nav" style="width: 100%;height: 65px">
+    <p style="float: left; font-family: fantasy;padding-left: 35px;font-size: 30px;line-height: 65px">Honey Peach</p>
+    <span><a href="#" class="exit"><i class="iconfont icon-tuichu_huaban1" style="line-height: 65px"></i> 注销</a></span>
+    <span><a href="myTicket.html" class="exit"><i class="iconfont icon-piaojuguanli" style="line-height: 65px"></i> 我的订单</a></span>
+    <span><a href="buyTicket.html" class="exit" style="line-height: 65px">首页</a></span>
+</div>
+<div class="theaterTable">
+    <table class="table" id="table">
+        <thead class="thead-light">
+        <tr>
+            <th scope="col">影厅名称</th>
+            <th scope="col">影片名称</th>
+            <th scope="col">放映日期</th>
+            <th scope="col">开始时间</th>
+            <th scope="col">散场时间</th>
+            <th scope="col">价格</th>
+            <th scope="col">购票</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        <tr>
+            <th scope="row">Theater1</th>
+            <td>唐人街探案3</td>
+            <td>2020.6.28</td>
+            <td>10：30</td>
+            <td>12：00</td>
+            <td>35</td>
+            <td>
+                <button type="button" class="btn btn-outline-success" onclick="seat(1,2,3,4,5)">购票</button>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Theater2</th>
+            <td>唐人街探案3</td>
+            <td>2020.6.28</td>
+            <td>13：00</td>
+            <td>14：30</td>
+            <td>35</td>
+            <td>
+                <button type="button" class="btn btn-outline-success" onclick="seat()">购票</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

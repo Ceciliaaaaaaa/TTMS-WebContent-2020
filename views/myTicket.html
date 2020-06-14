@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="images/x-icon">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../public/css/frame.css">
+    <link rel="stylesheet" href="../public/css/myTicket.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body onload="init()">
+    <div class="title-nav" style="width: 100%;height: 65px">
+        <p style="float: left; font-family: fantasy;padding-left: 35px;font-size: 30px;line-height: 65px">Honey Peach</p>
+        <span><a href="#" class="exit"><i class="iconfont icon-tuichu_huaban1" style="line-height: 65px"></i> 注销</a></span>
+        <span><a href="#" class="exit"><i class="iconfont icon-piaojuguanli" style="line-height: 65px"></i> 我的订单</a></span>
+        <span><a href="buyTicket.html" class="exit" style="line-height: 65px">首页</a></span>
+</div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">全部订单</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="margin: 0 auto">
+            <div class="card">
+                <div class="card-header">
+                    订单编号：100189
+                </div>
+                <div class="card-body">
+                    <p>影片名称：唐人街探案3</p>
+                    <p>放映日期：2020.6.28</p>
+                    <p>开场时间：10：30</p>
+                    <p>散场时间：12：00</p>
+                    <p>影厅名称：1号厅</p>
+                    <p>座位：3排4坐</p>
+                    <p>价格：30元</p>
+                    <div class="refund"><button type="button" class="btn btn-danger" onclick="refund()">退票</button></div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    订单编号：100190
+                </div>
+                <div class="card-body">
+                    <p>影片名称：唐人街探案3</p>
+                    <p>放映日期：2020.6.28</p>
+                    <p>开场时间：10：30</p>
+                    <p>散场时间：12：00</p>
+                    <p>影厅名称：1号厅</p>
+                    <p>座位：3排5坐</p>
+                    <p>价格：30元</p>
+                    <div class="refund"><button type="button" class="btn btn-danger" onclick="refund()">退票</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

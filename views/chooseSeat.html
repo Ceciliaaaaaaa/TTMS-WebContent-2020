@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="images/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>选择座位</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/frame.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/chooseTicket.css" />
+<!--    <script src="http://www.jq22.com/jquery/1.9.1/jquery.min.js"></script>-->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../public/js/jquery.seat-charts.min.js"></script>
+    <script type="text/javascript" src="../public/js/chooseSeat.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2 class="title">Honey Peach 影院在线购票</h2>
+    <span style="float: right"><a href="buyTicket.html" class="exit">返回</a></span>
+    <div class="demo clearfix">
+        <!---左边座位列表----->
+        <div id="seat_area">
+            <div class="front">屏幕</div>
+        </div>
+        <!---右边选座信息----->
+        <div class="booking_area">
+            <p>电影：<span id="playname">唐人街探案3</span></p>
+            <p>影厅：<span id="studioname">3号厅</span></p>
+            <p>场次：<span id="date">6月20日 14:15</span></p>
+            <p>单价：<span id="price">35</span>元</p>
+            <p>座位：</p>
+            <ul id="seats_chose"></ul>
+            <p>票数：<span id="tickects_num">0</span></p>
+            <p>总价：<b>￥<span id="total_price">0</span></b></p>
+<!--            <input type="button" class="btn" value="确定购买"/>-->
+            <button type="button" class="btn btn-success buy" onclick="check()">确定购票</button>
+            <div id="legend"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+

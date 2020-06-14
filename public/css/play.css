@@ -1,0 +1,36 @@
+.searchBar{
+    width: 100%;
+    /*background-color: #b3d4fc;*/
+    padding: 20px 50px;
+}
+.add{
+    margin-left: 20px;
+}
+.myCardDeck{
+    /*background-color: #b3d4fc;*/
+    margin: 0 30px;
+    /*width: 80%;*/
+}
+.myCardDeck .card{
+    width: 22%;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 30px;
+}
+.myCard{
+    height: 510px;
+}
+.myCardTitle{
+    margin-bottom: 0.3rem;
+    font-size: 18px;
+}
+.myCardText{
+    margin: 0;
+    font-size: 14px;
+}
+.card-footer{
+    text-align: center;
+}
+.card-footer button{
+    margin: 0 20px;
+}

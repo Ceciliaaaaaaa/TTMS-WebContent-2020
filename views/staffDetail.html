@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工信息</title>
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="images/x-icon">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../public/css/frame.css">
+    <link rel="stylesheet" href="../public/css/studioDetail.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../public/js/staffDetail.js"></script>
+</head>
+<body onload="init()">
+<div class="myNav">
+    <div class="user">
+        <div class="photo"></div>
+        <span>-Name-</span>
+    </div>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link myNav-link" href="studio.html"><i class="iconfont icon-yingyuan"></i>影厅管理</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link myNav-link" href="play.html"><i class="iconfont icon-huaban-"></i>影片管理</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link myNav-link" href="seat.html"><i class="iconfont icon-zuowei"></i>座位管理</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link myNav-link" href="schedule.html"><i class="iconfont icon-jihua1"></i>计划管理</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link myNav-link chosen" href="staff.html"><i class="iconfont icon-yuangongguanli1"></i>员工管理</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link myNav-link" href="sale.html"><i class="iconfont icon-shuju"></i>销售数据</a>
+        </li>
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link myNav-link" href="ticket.html"><i class="iconfont icon-piaojuguanli"></i>订票退票</a>-->
+<!--        </li>-->
+    </ul>
+    <span class="copyright">Copyright @ 2020 Honey Peach</span>
+</div>
+<div class="title-nav">
+    <span><a href="#" class="exit"><i class="iconfont icon-tuichu_huaban1"></i> 注销</a></span>
+    <span class="name">- 欢迎来到 Honey Peach 影院管理系统 -</span>
+</div>
+<div class="frame">
+    <h2>员工信息</h2>
+    <div class="addForm">
+        <form id="myform">
+            <input type="hidden" id="type" name="type">
+            <div class="form-group row">
+                <label for="staffid" class="col-form-label"><strong>员工编号：</strong></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="staffid" id="staffid" placeholder="请输入员工编号">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staffname" class="col-form-label"><strong>员工名称：</strong></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="staffname" id="staffname" placeholder="请输入员工名称">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-form-label"><strong>员工邮箱：</strong></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="请输入员工邮箱">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="password" class="col-form-label"><strong>员工密码：</strong></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="password" id="password" placeholder="请输入员工密码">
+                </div>
+            </div>
+            <button type="button" class="btn btn-success add" onclick="check()">提交</button>
+            <button type="button" class="btn btn-primary return" onclick="javascript:window.location='staff.html'">返回</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

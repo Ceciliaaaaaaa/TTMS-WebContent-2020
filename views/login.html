@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Honey Peach</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="images/x-icon">
+    <link href="../public/css/signin.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #fff1dc;
+        }
+        .title{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 38px;
+            font-weight: bold;
+            font-family: "Apple Color Emoji";
+        }
+        form{
+            position: absolute;
+            top: 36%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .peach1{
+            position: absolute;
+            width: 300px;
+            bottom: 8%;
+            left: 4%;
+        }
+        .peach2{
+            position: absolute;
+            width: 380px;
+            bottom: 8%;
+            right: 0;
+
+        }
+    </style>
+    <script>
+        function check() {
+            var select = document.getElementById("user");
+            if (select.value === '管理员'){
+                window.location = 'studio.html';
+            }else if(select.value === '经理'){
+                window.location = 'studio.html';
+            }else if(select.value === '用户'){
+                window.location = 'buyTicket.html';
+            }
+        }
+    </script>
+</head>
+<body class="text-center">
+    <h1 class="h3 mb-3 font-weight-normal title">Honey Peach 影院管理系统</h1>
+    <form class="form-signin" action="#">
+    <label for="inputAccount" class="sr-only">Account</label>
+    <input type="text" id="inputAccount" class="form-control" placeholder="Account" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <select name="user" id="user" class="form-control">
+            <option value="管理员">管理员</option>
+            <option value="经理">经理</option>
+            <option value="用户">用户</option>
+        </select>
+        <br>
+    <div class="checkbox mb-3">
+        <label>
+            <input type="checkbox" value="remember-me"> Remember me
+        </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="check()">登陆</button>
+</form>
+    <img src="../public/img/background2.png" alt="" class="peach1">
+    <img src="../public/img/login.png" alt="" class="peach2">
+</body>
+</html>

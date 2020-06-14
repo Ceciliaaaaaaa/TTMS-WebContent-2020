@@ -1,0 +1,24 @@
+.frame h2{
+    text-align: center;
+    margin: 40px 0;
+}
+.addForm{
+    width: 50%;
+    /*background-color: #b3d4fc;*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*padding-top: 20px;*/
+
+}
+.addForm button{
+    margin-top: 30px;
+    position: absolute;
+    margin-bottom: 70px;
+}
+.addForm .add{
+    left: 35%;
+}
+.addForm .return{
+    right: 35%;
+}

@@ -1,0 +1,14 @@
+.searchBar{
+    width: 100%;
+    /*background-color: #b3d4fc;*/
+    padding: 20px 50px;
+}
+.add{
+    margin-left: 20px;
+}
+.theaterTable{
+    /*background-color: #b3d4fc;*/
+    /*height: 400px;*/
+    width: 100%;
+    padding: 0 30px;
+}

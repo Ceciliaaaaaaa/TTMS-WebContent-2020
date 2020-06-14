@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /*background-color: #b3d4fc;*/
+}
+/*左侧导航栏*/
+.myNav{
+    /*height: 100vh;*/
+    height: 100%;
+    width: 14%;
+    background-color: #262626;
+    position: fixed;
+}
+.user{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.user .photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/user.png");
+    background-size: 100%;
+}
+.user span{
+    color: #ffffff;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.myNav-link{
+    color: #9d9d9d;
+}
+.nav-item:hover .myNav-link{
+    color: #ffffff;
+    background-color: #363636;
+}
+.myNav-link i{
+    padding: 0 10px;
+}
+.chosen{
+    color: #ffffff;
+    background-color: #363636;
+}
+.myNav .copyright{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 11px;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 1%;
+}
+/*上方导航栏*/
+.title-nav{
+    height: 50px;
+    width: 86%;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e6e6e6;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.title-nav span{
+    line-height: 50px;
+    padding: 0 25px;
+    float: right;
+}
+.name{
+    font-size: 13px;
+    color: #888888;
+}
+.exit{
+    color: #999c9e;
+    font-size: 14px;
+    font-weight: bold;
+}
+.exit:hover{
+    text-decoration: none;
+}
+/*右侧内容*/
+.frame{
+    /*height: 500px;*/
+    /*background-color: #b3d4fc;*/
+    width: 86%;
+    position: absolute;
+    right: 0;
+    top: 51px;
+}
